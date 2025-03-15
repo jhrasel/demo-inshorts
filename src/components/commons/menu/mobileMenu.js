@@ -54,7 +54,7 @@ export const MobileMenu = ({ menuList, socialList }) => {
   };
 
   return (
-    <div className="relative">
+    <div className="relative z-50">
       <button
         className="flex items-center justify-center w-10 h-10 focus:outline-none text-white"
         onClick={toggleMenu}
@@ -67,7 +67,7 @@ export const MobileMenu = ({ menuList, socialList }) => {
       </button>
 
       <motion.nav
-        className="absolute top-10 right-0 w-44 bg-white border rounded-md shadow-lg"
+        className="absolute top-10 right-0 w-44 bg-white border rounded-md shadow-lg z-50"
         initial="closed"
         animate={isOpen ? "open" : "closed"}
         variants={menuVariants}
