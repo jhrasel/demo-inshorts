@@ -1,3 +1,2 @@
-import CustomContainer from "./container";
-
-export { CustomContainer };
+export { CustomContainer } from "./container";
+export { CustomImage } from "./image";

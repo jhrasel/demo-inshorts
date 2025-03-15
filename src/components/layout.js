@@ -1,7 +1,9 @@
+import Menu from "./commons/menu";
+
 export default function Layout({ children }) {
   return (
     <>
-      {/* menu */}
+      <Menu />
       <main>{children}</main>
       {/* footer */}
     </>

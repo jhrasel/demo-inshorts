@@ -1,13 +1,11 @@
-import { Categories } from "./categories";
-import { Follow } from "./follow";
-import { MyFeeds } from "./my-feeds";
+import { Banner } from "./banner";
+import { ClientFeedback } from "./client-feedback";
 
 export default function HomePage() {
   return (
-    <>
-      <MyFeeds />
-      <Categories />
-      <Follow />
-    </>
+    <div className="flex flex-col gap-16 pb-10">
+      <Banner />
+      <ClientFeedback />
+    </div>
   );
 }
