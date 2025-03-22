@@ -96,7 +96,7 @@ export default function Menu() {
   return (
     <>
       <motion.nav
-        className="py-3 border-b border-gray-50 sticky top-0 left-0 w-full z-50"
+        className="py-3 border-b border-gray-50 sticky top-0 left-0 w-full z-50 bg-[#1f2235]"
         initial="hidden"
         animate="visible"
         variants={containerVariants}

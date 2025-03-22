@@ -48,6 +48,19 @@ export const ClientFeedback = () => {
   return (
     <div className="">
       <CustomContainer>
+        <div className="laptop:w-[70%] mx-auto text-center mb-10 flex flex-col gap-2">
+          <h4 className="text-blue-400 text-xl font-bold">Testimonial</h4>
+          <h2 className="text-white text-3xl laptop:text-4xl font-bold">
+            Client Feedbacks
+          </h2>
+          <p className="text-sm laptop:text-base">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+            molestiae maxime soluta id officia, amet nisi nesciunt a. Illo
+            reprehenderit sint omnis ab facilis perferendis totam nisi porro
+            accusamus culpa.
+          </p>
+        </div>
+
         <Swiper
           breakpoints={{
             320: {
@@ -72,7 +85,7 @@ export const ClientFeedback = () => {
         >
           {ClientFeedbackList.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="text-center bg-white p-5 rounded-2xl">
+              <div className="text-center bg-blue-100 p-5 rounded-2xl">
                 <CustomImage
                   src={item.img}
                   alt={item.name}
@@ -86,7 +99,7 @@ export const ClientFeedback = () => {
                   <h4 className="text-primary-blue font-semibold text-lg">
                     {item.designation}
                   </h4>
-                  <p>{item.review}</p>
+                  <p className="text-sm laptop:text-base">{item.review}</p>
                 </div>
               </div>
             </SwiperSlide>
