@@ -12,7 +12,7 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Autoplay, Navigation } from "swiper/modules";
-import { CustomContainer } from "../ui";
+import { CustomContainer, CustomImage } from "../ui";
 
 const bannerLists = [
   {
@@ -120,8 +120,10 @@ export const Banner = () => {
               </AnimatePresence>
 
               {/* Static image as fallback */}
-              <img
+              <CustomImage
                 src={item.image}
+                height="700"
+                width="1920"
                 alt="banner"
                 className="w-full h-full object-cover"
                 style={{

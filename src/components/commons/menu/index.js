@@ -108,13 +108,15 @@ export default function Menu() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <CustomImage
-              src="/images/logo-white.png"
-              alt="logo"
-              width={250}
-              height={250}
-              className="h-7 laptop:h-9 w-auto"
-            />
+            <Link href={"/"}>
+              <CustomImage
+                src="/images/logo-white.png"
+                alt="logo"
+                width={250}
+                height={250}
+                className="h-7 laptop:h-9 w-auto"
+              />
+            </Link>
           </motion.div>
 
           {/* menu */}

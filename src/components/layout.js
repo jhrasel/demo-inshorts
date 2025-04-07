@@ -1,3 +1,4 @@
+import Footer from "./commons/footer";
 import Menu from "./commons/menu";
 
 export default function Layout({ children }) {
@@ -5,7 +6,7 @@ export default function Layout({ children }) {
     <>
       <Menu />
       <main>{children}</main>
-      {/* footer */}
+      <Footer/>
     </>
   );
 }
