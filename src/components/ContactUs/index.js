@@ -11,22 +11,8 @@ export const ContactUs = () => {
       <ContactBanner />
 
       <CustomContainer>
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="max-w-3xl mx-auto text-center mb-12 mt-16"
-        >
-          <h2 className="text-4xl font-bold text-golden-color mb-2 text-white">
-            Contact Us
-          </h2>
-          <p className="text-body-text text-sm md:text-base">
-            We’re here to help and answer any questions you might have.
-          </p>
-        </motion.div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center mt-16">
           {/* Left Side - Info */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}

@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { CustomContainer } from "../ui";
+import GalleryBanner from "./banner";
 
 const galleryImages = [
   "https://theme7x.com/react/itodo/assets/images/main-slider/slider1/slide1.jpg",
@@ -18,23 +19,10 @@ const galleryImages = [
 export const GalleryPage = () => {
   return (
     <section className="py-16">
-      <CustomContainer>
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="text-center mb-12"
-        >
-          <h2 className="text-4xl font-bold text-golden-color mb-3 text-white">
-            Gallery
-          </h2>
-          <p className="text-body-text text-sm md:text-base">
-            A collection of our recent work and happy moments.
-          </p>
-        </motion.div>
+      <GalleryBanner />
 
-        <div className="grid grid-cols-1 tab:grid-cols-2 laptop:grid-cols-3 gap-5">
+      <CustomContainer>
+        <div className="grid grid-cols-1 tab:grid-cols-2 laptop:grid-cols-3 gap-5 pt-16">
           {galleryImages.map((img, index) => (
             <motion.div
               key={index}

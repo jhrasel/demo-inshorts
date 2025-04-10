@@ -2,7 +2,7 @@
 
 import { CustomImage } from "../ui";
 
-export default function Banner() {
+export default function GalleryBanner() {
   return (
     <section className="relative">
       <CustomImage

@@ -48,7 +48,7 @@ export const Team = () => {
           {teamData.map((member, index) => (
             <motion.div
               key={index}
-              className="bg-white rounded-2xl shadow-md overflow-hidden text-center p-5 hover:shadow-xl transition-all duration-300"
+              className="bg-blue-200 rounded-2xl shadow-md overflow-hidden text-center p-5 hover:shadow-xl transition-all duration-300"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -71,7 +71,7 @@ export const Team = () => {
               <h3 className="text-xl font-semibold text-golden-color">
                 {member.name}
               </h3>
-              <p className="text-sm text-body-text">{member.designation}</p>
+              <p className="text-sm !text-black">{member.designation}</p>
 
               <div className="mt-4 flex justify-center gap-4">
                 {member.socials?.facebook && (
