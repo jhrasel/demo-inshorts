@@ -31,7 +31,7 @@ export const Cryptic = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              Welcome To Cryptiva
+              Welcome to InfoShieldPro
             </motion.h4>
 
             <motion.h2
@@ -40,7 +40,7 @@ export const Cryptic = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              The Perfect Solution For All The Protection Question
+              Your Strategic Partner in Cyber Resilience
             </motion.h2>
 
             <motion.p
@@ -49,10 +49,9 @@ export const Cryptic = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud xercitation ullamco laboris
-              nisi ut aliquip ex ea commodo
+              We specialize in proactive defense, breach prevention, and digital
+              risk mitigation — empowering businesses to operate securely in
+              today’s evolving threat landscape.
             </motion.p>
 
             <div className="grid grid-cols-2 gap-5">
@@ -72,11 +71,12 @@ export const Cryptic = () => {
                 />
 
                 <h4 className="text-xl font-bold text-white mt-2">
-                  High Quality Service
+                  High-Quality Cybersecurity Services
                 </h4>
                 <p>
-                  Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do
-                  eiusmod tempor incididunt
+                  At InfoShield Pro, we deliver top-tier cybersecurity services
+                  tailored to meet your business needs, ensuring reliability and
+                  excellence every step of the way.
                 </p>
               </motion.div>
 
@@ -96,11 +96,12 @@ export const Cryptic = () => {
                 />
 
                 <h4 className="text-xl font-bold text-white mt-2">
-                  Effective Protection
+                  Effective Protection for Your Business
                 </h4>
                 <p>
-                  Lorem ipsum dolor sit amet, consecte adipiscing elit, sed do
-                  eiusmod tempor incididunt
+                  Our expert team provides strong and effective protection
+                  against cyber threats, keeping your data safe and your
+                  operations secure.
                 </p>
               </motion.div>
             </div>

@@ -9,54 +9,84 @@ const dats = [
     id: crypto.randomUUID(),
     image:
       "https://fse.jegtheme.com/cryptiva/wp-content/uploads/sites/26/2024/12/net.png",
-    title: "Network Security",
+    title: "Application VAPT Services",
     description:
-      "Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incididunt ut labore",
+      "Comprehensive vulnerability assessment and penetration testing to identify and remediate application-layer security flaws.",
+    description2:
+      "Identify and fix application vulnerabilities through expert testing.",
   },
 
   {
     id: crypto.randomUUID(),
     image:
       "https://fse.jegtheme.com/cryptiva/wp-content/uploads/sites/26/2024/12/database.png",
-    title: "Database Security",
+    title: "Network Security Services",
     description:
-      "Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incididunt ut labore",
+      "End-to-end protection of enterprise networks through firewall optimization, intrusion detection, and secure architecture design.",
+    description2:
+      "Protect networks with robust security architecture and controls.",
   },
 
   {
     id: crypto.randomUUID(),
     image:
       "https://fse.jegtheme.com/cryptiva/wp-content/uploads/sites/26/2024/12/asser2x-150x150-1.png",
-    title: "Web Security",
+    title: "Enterprise Network Services Portfolio",
     description:
-      "Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incididunt ut labore",
+      "Scalable, secure network infrastructure solutions encompassing design, deployment, segmentation, and performance optimization.",
+    description2: "Design and optimize secure, scalable enterprise networks.",
   },
 
   {
     id: crypto.randomUUID(),
     image:
       "https://fse.jegtheme.com/cryptiva/wp-content/uploads/sites/26/2024/12/locker.png",
-    title: "Locker Security",
+    title: "Security Operations & SIEM Integration",
     description:
-      "Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incididunt ut labore",
+      "Centralized threat monitoring and incident detection through next-gen SIEM deployment and 24/7 Security Operations Center support.",
+    description2: "Monitor and respond to threats with SIEM and SOC solutions.",
   },
 
   {
     id: crypto.randomUUID(),
     image:
       "https://fse.jegtheme.com/cryptiva/wp-content/uploads/sites/26/2024/12/data-security.png",
-    title: "Data Security",
+    title: "Digital Forensics & Incident Response",
     description:
-      "Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incididunt ut labore",
+      "Rapid breach investigation and containment with forensic analysis, root cause identification, and coordinated recovery strategies.",
+    description2:
+      "Investigate breaches and recover quickly with forensic precision.",
   },
 
   {
     id: crypto.randomUUID(),
     image:
       "https://fse.jegtheme.com/cryptiva/wp-content/uploads/sites/26/2024/12/cloud-150x150-1.png",
-    title: "Cloud Security",
+    title: "Security Advisory & Compliance Consulting",
     description:
-      "Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod tempor incididunt ut labore",
+      "Strategic guidance and audit-ready compliance support across global frameworks including ISO 27001, NIST, PCI-DSS, and GDPR.",
+    description2:
+      "Navigate cybersecurity risks and meet regulatory compliance.",
+  },
+
+  {
+    id: crypto.randomUUID(),
+    image:
+      "https://fse.jegtheme.com/cryptiva/wp-content/uploads/sites/26/2024/12/database.png",
+    title: "Malware Analysis & Intelligence",
+    description:
+      "Deep reverse engineering and threat intelligence to detect, classify, and defend against sophisticated malware attacks.",
+    description2: "Analyze malware and deliver actionable threat intelligence.",
+  },
+
+  {
+    id: crypto.randomUUID(),
+    image:
+      "https://fse.jegtheme.com/cryptiva/wp-content/uploads/sites/26/2024/12/cloud-150x150-1.png",
+    title: "Secure Web Development & Application Hardening",
+    description:
+      "Resilient application development and code-level hardening to embed security into every phase of the SDLC.",
+    description2: "Build secure apps and fortify code against cyber threats.",
   },
 ];
 
@@ -168,12 +198,20 @@ export default function Services() {
                 >
                   {item.description}
                 </motion.p>
+                <motion.p
+                  className="text-sm"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 2 }}
+                  transition={{ duration: 0.5, delay: 0.3 }}
+                >
+                  {item.description}
+                </motion.p>
                 <motion.div
                   whileHover={{ x: 5 }}
                   transition={{ type: "spring", stiffness: 400 }}
                 >
                   <Link
-                    href={""}
+                    href={"/contact"}
                     className="text-blue-400 text-sm inline-block"
                   >
                     Read More...

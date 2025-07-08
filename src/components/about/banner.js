@@ -17,11 +17,13 @@ export default function AboutBanner() {
 
       {/* content */}
       <div className="absolute top-0 left-0 h-full w-full bg-black/70 text-center flex flex-col justify-center items-center px-5 tab:px-0">
-        <h2 className="text-4xl text-white font-bold">About Us</h2>
+        <h2 className="text-4xl text-white font-bold">
+          Welcome to InfoShieldPro
+        </h2>
         <p className="max-w-[500px] mt-2 !text-gray-200 text-sm tab:text-base">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-          quisquam earum sed nam quae, alias recusandae facilis reprehenderit
-          veniam ab!
+          InfoShieldPro is a full-spectrum cybersecurity firm delivering
+          advanced threat defense, compliance consulting, and secure digital
+          transformation solutions for enterprises worldwide.
         </p>
       </div>
     </section>

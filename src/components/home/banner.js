@@ -11,6 +11,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 // import required modules
+import Link from "next/link";
 import { Autoplay, Navigation } from "swiper/modules";
 import { CustomContainer, CustomImage } from "../ui";
 
@@ -19,30 +20,50 @@ const bannerLists = [
     id: crypto.randomUUID(),
     image:
       "https://theme7x.com/react/itodo/assets/images/main-slider/slider1/slide1.jpg",
-    titleOne: "We are Dedicated",
-    titleTwo: "inspired and passionate about innovation.",
+    titleOne: "Trust-Driven Cyber Defense",
+    titleTwo: "Your Trusted Partner in Cybersecurity",
     description:
-      "Fusce lacinia elit odio, id pulvinar erat placerat vitae. Sed quis aliquet neque. Aenean placerat condimentum lorem non suscipit. Cras tellus tellus, fringilla eu sapien.",
+      "With a deep understanding of banking, finance, and critical infrastructure, our team builds tailored defense strategies. Partner with us for sustainable cybersecurity, from assessment to incident response.",
   },
 
   {
     id: crypto.randomUUID(),
     image:
       "https://theme7x.com/react/itodo/assets/images/main-slider/slider1/slide2.jpg",
-    titleOne: "We are Dedicated",
-    titleTwo: "inspired and passionate about innovation.",
+    titleOne: "Think Like a Hacker, Defend Like a Pro",
+    titleTwo: "Expert-Led VAPT for Web, Mobile, and APIs",
     description:
-      "Fusce lacinia elit odio, id pulvinar erat placerat vitae. Sed quis aliquet neque. Aenean placerat condimentum lorem non suscipit. Cras tellus tellus, fringilla eu sapien.",
+      "Identify and eliminate security weaknesses before adversaries exploit them. Our offensive security team simulates real-world attacks to uncover vulnerabilities in web apps, mobile platforms, APIs, and IT infrastructure — ensuring robust cyber resilience.",
+  },
+
+  {
+    id: crypto.randomUUID(),
+    image:
+      "https://theme7x.com/react/itodo/assets/images/main-slider/slider1/slide2.jpg",
+    titleOne: "When Breaches Happen, Be Ready",
+    titleTwo: "Digital Forensics & Incident Response Services",
+    description:
+      "Minimize business disruption with our rapid-response forensic investigation and root cause analysis. InfoShieldPro helps you recover fast, trace intrusions, and implement controls to prevent future compromises — all while maintaining legal and compliance integrity.",
   },
 
   {
     id: crypto.randomUUID(),
     image:
       "https://theme7x.com/react/itodo/assets/images/main-slider/slider1/slide1.jpg",
-    titleOne: "We are Dedicated",
-    titleTwo: "inspired and passionate about innovation.",
+    titleOne: "Security That Meets Standards",
+    titleTwo: "Risk-Driven Security Consulting & Compliance Advisory",
     description:
-      "Fusce lacinia elit odio, id pulvinar erat placerat vitae. Sed quis aliquet neque. Aenean placerat condimentum lorem non suscipit. Cras tellus tellus, fringilla eu sapien.",
+      "Stay ahead of regulatory mandates and security best practices. We provide tailored consulting services for ISO 27001, NIST, PCI DSS, and more — ensuring your systems and processes are compliant, secure, and audit-ready.",
+  },
+
+  {
+    id: crypto.randomUUID(),
+    image:
+      "https://theme7x.com/react/itodo/assets/images/main-slider/slider1/slide1.jpg",
+    titleOne: "Secure Code. Smarter Design.",
+    titleTwo: "Website Design & Development with Security by Design",
+    description:
+      "Go beyond aesthetics with websites built to withstand attacks. We develop secure, high-performance digital experiences with hardened CMS configurations, secure code practices, and full compliance with modern web security standards.",
   },
 ];
 
@@ -173,7 +194,7 @@ export const Banner = () => {
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                           >
-                            Learn More
+                            <Link href={"/contact"}>Learn More</Link>
                           </motion.button>
                         </motion.div>
                       </motion.div>
